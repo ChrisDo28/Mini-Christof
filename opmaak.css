@@ -1,0 +1,109 @@
+body { 
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+} 
+
+header { 
+    background-color: rgb(0, 153, 255);
+    box-sizing: border-box;
+    padding: 2em 1em;
+} 
+
+header h1 {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 2.5em;
+    font-variant: small-caps;
+    text-align: center;
+}
+.groot {
+    font-size: xx-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-style: bold;
+    font-stretch: semi-expanded; 
+}
+nav { 
+    background-color: rgb(255, 153, 51);
+    box-sizing: border-box;
+    font-size: .9em;
+} 
+
+nav ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li { 
+    border-top: 1px solid white;
+    padding: .5em;
+}
+
+nav li:hover {
+    background-color: navy;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+article { 
+    box-sizing: border-box;
+    padding: 2em;
+    min-height: 70vh;
+}
+
+article img {
+    max-width: 100%;
+}
+
+article ul, #hoofdvak ol {
+    list-style-position: outside;
+    margin-left: 2em;
+}
+
+article h1 {
+    color: maroon;
+}
+
+article h2 {
+    color: navy;
+}
+
+footer { 
+    background-color: rgb(0, 153, 255);
+    box-sizing: border-box;
+    clear: both;
+    color: rgb(255,255,255
+    );
+    font-size: .8em;
+    padding: 2em;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    nav ul, article {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    nav {
+        font-size: 1em;
+    }
+    nav ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+     }
+    nav ul li {
+        border-top: none;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+    }
+    nav li {
+        text-align: center;
+    }
+}
