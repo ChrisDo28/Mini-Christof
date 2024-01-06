@@ -49,19 +49,26 @@ a:active {
     font-style: bold;
     font-stretch: semi-expanded; 
 }
-nav { 
+nav {
     background-color: rgb(255, 153, 51);
     box-sizing: border-box;
     font-size: .9em;
-} 
+    display: flex;
+    width: 100%;
+}
 
-nav ul { 
+nav a {
+    text-decoration: none;
+    flex: 1; 
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-nav li { 
+nav li {
     border-top: 1px solid white;
     padding: .5em;
 }
@@ -74,6 +81,7 @@ nav li a {
     text-decoration: none;
     color: white;
 }
+
 
 article { 
     background-color: white;
