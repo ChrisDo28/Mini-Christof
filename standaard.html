@@ -9,6 +9,7 @@
         <meta name="viewport" content="initial-scale=1.0, width=device-width">
         <link rel="stylesheet" href="basis.css" type="text/css" media="screen">
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script src="languages.js"></script>
     </head>
 
     <body>
@@ -24,12 +25,17 @@
             </a>
             <a href="wiebenik.html">
                 <ul>
-                    <li>Wie ben ik</li>
+                    <li id="Wie ben ik">Wie ben ik</li>
                 </ul>
             </a>
             <a href="hobbys.html">
                 <ul>
                     <li>Hobby’s</li>
+                </ul>
+            </a>
+            <a href="projecten.html">
+                <ul>
+                    <li id="projecten">Projecten</li>
                 </ul>
             </a>
             <a href="fotos.html">
@@ -50,11 +56,15 @@
         </nav>
 
         <article>
+            <h1 id="titel"></h1>
 
+            <p id="inleiding"></p>
 
         </article>
 
         <footer>
+            <button onclick="setLanguage('nl')">NL</button>
+            <button onclick="setLanguage('en')">EN</button>
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons-Licentie" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Dit werk valt onder een <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Naamsvermelding 4.0 Internationaal-licentie</a>.
             <p>© mini christof</p>
         </footer>
